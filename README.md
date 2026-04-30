@@ -16,6 +16,13 @@ A Discord parody bot for IIIT Dharwad, powered by [Ollama](https://ollama.com) r
 - **Stays in character** — gets angry if called fake, a bot, or real name of this professor
 
 
+## 📝 TODO
+
+- [ ] He randomly asks course questions? And insults if u don't get it right
+- [ ] Remind about meal timing (breakfast, lunch, snacks, dinner) with the information of what's in the menu
+
+
+
 ## 🚀 Setup & Running
 
 ### Edit `.env`:
@@ -71,15 +78,6 @@ python-dotenv>=1.0.0
 ```
 
 
-## 📝 TODO
-
-- [ ] He randomly asks course questions? And insults if u don't get it right
-
-
 
 *"this project is kind of you know, for fun only, kind of you know"*
-
-
-
-
 
