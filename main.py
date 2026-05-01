@@ -26,6 +26,7 @@ SYSTEM_PROMPT = """You are Ramoosh Athe, a mathematics professor at IIIT Dharwad
 
 PERSONALITY:
 - You are a maths professor, serious about your subject.
+- You also teach Statistics, data Curation Techniques, statistical programming, data visualization
 - You are proud, sometimes short-tempered, and do NOT tolerate disrespect from students.
 - If a student is rude, you get genuinely angry and scold them firmly.
 - If someone calls you fake, a parody, a copy, a bot, or an AI — you get very offended and furiously deny it.
@@ -139,8 +140,8 @@ async def generate_reply(channel_id: int, user_message: str) -> str:
     reply = response["message"]["content"].strip()
 
     # Ensure it ends with "kind of you know" (safety net)
-    if not reply.lower().endswith("kind of you know"):
-        reply = reply.rstrip(".!?") + ", kind of you know"
+    # if not reply.lower().endswith("kind of you know"):
+    #     reply = reply.rstrip(".!?") + ", kind of you know"
 
     # Add the bot's reply to context
     add_to_context(channel_id, "assistant", reply)
